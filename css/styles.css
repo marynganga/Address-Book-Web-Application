@@ -10,3 +10,6 @@
   .contact:hover {
     text-decoration: underline;
   }
+button.btn{
+    float: right
+}
