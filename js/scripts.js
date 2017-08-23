@@ -17,11 +17,17 @@ Contact.prototype.fullName = function () {
     return this.firstName + " " + this.lastName;
 }
 //full address prototype method
-Address.prototype.fullAddress = function(){
+Address.prototype.fullAddress = function () {
     return this.street + ', ' + this.city + ', ' + this.county;
 }
-
-
+// Clear the input fields after submission
+function resetFields() {
+    $("input#new-first-name").val("");
+    $("input#new-last-name").val("");
+    $("input.new-street").val("");
+    $("input.new-city").val("");
+    $("input.new-county").val("");
+}
 //FRONT END LOGIC
 $(document).ready(function () {
     //action when add address button is clicked
@@ -31,15 +37,15 @@ $(document).ready(function () {
             '<div class="new-address">' +
             '<div class="form-group">' +
             '<label for="new-street">Street</label>' +
-            ' <input type="text" class="form-control" id="new-street">' +
+            ' <input type="text" class="form-control new-street">' +
             '</div>' +
             '<div class="form-group">' +
             '<label for="new-city">City</label>' +
-            '<input type="text" class="form-control" id="new-city">' +
+            '<input type="text" class="form-control new-city">' +
             '</div>' +
             '<div class="form-group">' +
             '<label for="new-county">County</label>' +
-            '<input type="text" class="form-control" id="new-county">' +
+            '<input type="text" class="form-control new-county">' +
             '</div>' +
             '</div>');
     })
@@ -63,11 +69,6 @@ $(document).ready(function () {
         //display the contact's fullnames
         $("ul#contacts").append("<li><span class='contact'>" + newContact.firstName + " " + newContact.lastName + "</span></li>");
 
-
-
-
-
-
         $(".contact").last().click(function () {
             $("#show-contact").show();
             $("#show-contact h2").text(newContact.fullName());
@@ -79,11 +80,7 @@ $(document).ready(function () {
                 $("ul#addresses").append("<li>" + address.fullAddress() + "</li>");
             });
         });
-        // Clear the input fields after submission
-        $("input#new-first-name").val("");
-        $("input#new-last-name").val("");
-        $("input.new-street").val("");
-        $("input.new-city").val("");
-        $("input.new-county").val("");
+        //clear the input fields
+        resetFields();
     });
 });
