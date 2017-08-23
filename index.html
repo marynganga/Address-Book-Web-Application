@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-  <html>
-    <head>
+<html>
+
+<head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
@@ -24,7 +25,23 @@
                         <label for="new-last-name">Last name</label>
                         <input type="text" class="form-control" id="new-last-name">
                     </div>
-
+                    <div id="new-addresses">
+                        <div class="new-address">
+                            <div class="form-group">
+                                <label for="new-street">Street</label>
+                                <input type="text" class="form-control" id="new-street">
+                            </div>
+                            <div class="form-group">
+                                <label for="new-city">City</label>
+                                <input type="text" class="form-control" id="new-city">
+                            </div>
+                            <div class="form-group">
+                                <label for="new-county">County</label>
+                                <input type="text" class="form-control" id="new-county">
+                            </div>
+                        </div>
+                    </div>
+                    <span class="btn btn-primary" id="add-address">Another Address</span>
                     <button type="submit" class="btn">Add</button>
                 </form>
 
@@ -38,9 +55,14 @@
                     <h2></h2>
                     <p>First Name: <span class="first-name"></span></p>
                     <p>Last Name: <span class="last-name"></span></p>
+                    <p>Addresses:</p>
+                    <ul id="addresses">
+                        
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
 </body>
-  </html>
+
+</html>
