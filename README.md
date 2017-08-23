@@ -12,11 +12,11 @@ One can input:
 
 * Last Name
 
-* Address
+* Address:
 
-  ** Street
-  ** City
-  ** County
+  * Street
+  * City
+  * County
 
 
 After submitting the details, a link with the contact's name will appear, 
@@ -25,16 +25,18 @@ once clicked all the entered information about that particular contact will be v
 ## Specifications
 
 1. It can display the first name and last name together.
-** Input: 
+
+* Input: 
   
         First Name: Mary
         Last Name: Jones
         
-** Output: _Mary Jones_
+       
+* Output: _Mary Jones_
 
 2. It can display all of the inputed data on clicking the above link.
 
-** Input: 
+* Input: 
 
           First Name: Mary
           Last Name: Jones
@@ -42,9 +44,9 @@ once clicked all the entered information about that particular contact will be v
           City: Nairobi
           County: Nairobi
           
-** On clicking the link outputted after submission,
+* On clicking the link outputted after submission,
 
-** Output: 
+* Output: 
 
            Mary Jones
            First Name: Mary
