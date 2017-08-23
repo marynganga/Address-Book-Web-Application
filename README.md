@@ -79,4 +79,4 @@ There are no known bugs.
 
 ### License
 
-MIT (c) [Mary Ng'ang'a](https://github.com/marynganga) and [Nelly Cheruiyot](https://github.com/nellycheruiyot) and  [Nason Mang'eli]((https://github.com/nasonmangeli)
+MIT (c) [Mary Ng'ang'a](https://github.com/marynganga) and [Nelly Cheruiyot](https://github.com/nellycheruiyot) and  [Nason Mang'eli](https://github.com/nasonmangeli)
