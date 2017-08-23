@@ -34,6 +34,15 @@ $(document).ready(function () {
     $("#add-address").click(function () {
         //append more address input fields once the add address button is clicked.
         $('#new-addresses').append(
+            '<div class="form-group">' +
+            '<label for="address-type">Choose address type</label>' +
+            '<select required name="address-type" form="new-contact" class="address-type">' +
+            '<option value="">None</option>' +
+            '<option value="home">Home</option>' +
+            '<option value ="work">Work</option>'+ 
+            '<option value ="mailing">Mailing</option>'+ 
+            '</select>'+ 
+            '</div>'+
             '<div class="new-address">' +
             '<div class="form-group">' +
             '<label for="new-street">Street</label>' +
